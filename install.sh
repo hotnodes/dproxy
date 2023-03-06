@@ -8,7 +8,7 @@ fi
 
 if ! command -v curl &>/dev/null; then
  echo "Installing curl"
- apt update -qq && apt install -qq curl
+ apt update -qq && apt install -yqq curl
 fi
 
 read -p "Enter your username: " PROXY_USER
